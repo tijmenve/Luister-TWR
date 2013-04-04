@@ -1,0 +1,14 @@
+<ul id='appMenu'>
+  {% for stream in streams %}
+      <li class="stream">
+        <a data-id="{{ loop.index0 }}" href="#" class="stream-button">
+          <img src="images/streams/{{ stream.streamLogo }}-110.png" />
+          <span class="streamName">{{ stream.streamName }}</span>
+          <span class="description">
+            {{ stream.streamDescTeaser }}
+          </span>
+        </a>
+      </li>
+  {% endfor %}
+  <li><a id="showInfo" href="#">Over deze app</a></li>
+</ul>
